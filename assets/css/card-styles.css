@@ -1,0 +1,66 @@
+#card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 45px;
+}
+
+.card {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: #f2f2f2;
+  padding: 30px;
+}
+
+.card-img {
+  width: 100%;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.card-btn {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  background-color: #00bae9;
+  color: white;
+  border: none;
+  padding: 10px 30px;
+}
+
+@media (min-width: 900px) {
+  #card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+  }
+}
+
+@media (min-width: 1440px) {
+  #card-container {
+    padding: 30px;
+  }
+  .card {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-evenly;
+    gap: 15px;
+  }
+  .card-img {
+    flex: 1;
+  }
+
+  .card-content {
+    flex: 1;
+    align-items: flex-start;
+  }
+}

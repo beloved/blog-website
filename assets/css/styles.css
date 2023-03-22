@@ -1,0 +1,121 @@
+@import url(card-styles.css);
+@import url(blog-post.css);
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Cinzel", serif;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+}
+
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px 1fr 75px;
+  gap: 15px;
+  grid-template-areas:
+    "hd"
+    "mn"
+    "ft";
+}
+
+#nav {
+  grid-area: "hd";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  width: 100%;
+  color: #f2f2f2;
+  background-color: black;
+}
+
+.logo {
+  width: 75px;
+}
+
+.nav-links {
+  font-family: "Cinzel", serif;
+  display: flex;
+  gap: 15px;
+}
+
+#main {
+  grid-area: "mn";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+#header {
+  padding: 30px;
+}
+
+#footer {
+  grid-area: "ft";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 30px;
+  background-color: black;
+  color: #f2f2f2;
+}
+
+@media (min-width: 900px) {
+  .container {
+    grid-template-columns: 25vw 1fr;
+    grid-template-rows: 1fr;
+    gap: 15px;
+    grid-template-areas:
+      "hd" "mn"
+      "ft" "ft";
+  }
+
+  #nav,
+  .nav-links {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .logo {
+    width: 100px;
+    margin: 30px;
+  }
+
+  #header {
+    margin-top: 30px;
+  }
+
+  #footer {
+    background-color: white;
+    color: black;
+  }
+}
