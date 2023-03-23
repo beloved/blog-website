@@ -68,6 +68,10 @@ figcaption {
   margin-top: 15px;
 }
 
+.more-posts {
+  gap: 30px;
+}
+
 @media (min-width: 900px) {
   #main-content {
     padding: 0 6em;
