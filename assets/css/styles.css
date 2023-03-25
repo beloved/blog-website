@@ -27,6 +27,7 @@ h3 {
     "mn";
 }
 
+/* Navigation */
 #nav {
   grid-area: "hd";
   display: flex;
@@ -47,6 +48,8 @@ h3 {
   display: flex;
   gap: 15px;
 }
+
+/* Main Section - Header/Content/Footer */
 
 #main {
   grid-area: "mn";
@@ -72,6 +75,9 @@ h3 {
   color: #f2f2f2;
 }
 
+/* Media Queries */
+
+/* For screens smaller than 430px */
 @media (max-width: 430px) {
   #nav {
     gap: 1px;
@@ -91,6 +97,8 @@ h3 {
     font-size: 1em;
   }
 }
+
+/* For screens larger than 900px */
 
 @media (min-width: 900px) {
   .container {

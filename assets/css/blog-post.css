@@ -16,11 +16,13 @@
 .author-details {
   padding: 0 30px;
 }
+
 #main-content,
 .blog-author-section,
 .author-posts {
   gap: 30px;
 }
+
 .blog-post-img {
   width: 100%;
 }
@@ -29,6 +31,7 @@ figcaption {
   font-size: 10px;
   color: darkgray;
 }
+
 .blog-post {
   gap: 15px;
 }
@@ -71,6 +74,8 @@ figcaption {
 .more-posts {
   gap: 30px;
 }
+
+/* Media Queries */
 
 @media (min-width: 900px) {
   #main-content {
