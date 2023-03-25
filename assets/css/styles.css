@@ -49,6 +49,11 @@ h3 {
   gap: 15px;
 }
 
+hr {
+  width: 50px;
+  margin: 30px;
+  color: #00bae9;
+}
 /* Main Section - Header/Content/Footer */
 
 #main {
