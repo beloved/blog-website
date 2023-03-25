@@ -12,3 +12,7 @@ a {
   color: inherit;
   cursor: pointer;
 }
+
+* {
+  border: 1px solid red !important;
+}
